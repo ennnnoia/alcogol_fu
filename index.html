@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="css/bootstrap.css"> можно подключить бутстрап файлом из архива-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--подключаем бутстрап ссылкой перед своим css-->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <title>alcohol fu</title>
+</head>
+
+<body>
+
+  <div class="verh">
+    <div class="verh__levo">
+      <div class="verh__nav1">
+        <p class="p1">SHOP</p>
+        <p class="p1">MEMBERSHIP</p>
+        <p class="p1">OUR STORY</p>
+      </div>
+    </div>
+    <div class="verh__pravo">
+      <div class="verh__nav2">
+        <p class="p1">NEWSLETTER</p>
+        <p class="p1">ACCOUNT</p>
+        <p class="p1">CART (0)</p>
+        
+        <!--<select class="form-select" aria-label="Default select example">
+          <option selected>o</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select> выпадающий список
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">тык</button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+        </div>-->
+
+
+      </div>
+      <div class="verh__txt">
+        <p class="p2">Alcohol for the modern drinker</p>
+        <p class="p3">Light and refreshing flavors made with real, clean ingredients
+          you can feel good about. Just pour, sip, and enjoy.</p>
+      </div>
+        <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      <!--<button class="verh__but">Shop ALL</button>-->
+    </div>
+  </div>
+
+
+
+<!-- Modal чек-боксы обернуть ещё одним блоком и поставить его посередине,
+   чтобы галочки не были в начале-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="pmod">Are you 21 or older?</p>
+        <p class="p3">You must be of legal drinking age to purchase Haus.</p>
+        <div class="modcentr">  
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              <p class="p03">YES, I’m of drinking age</p>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              <p class="p03">No, I’m not of drinking age</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="spons">
+    <div class="spons__cardd">
+      <div class="card"><!--бутстрап карточки-->
+        <div class="card-body">
+          <p class="p4">"What makes Haus so special is its incredible flavors."</p>
+        </div>
+        <img src="img/f&w.svg" class="card-img-top">
+      </div>
+    </div>
+    <div class="spons__cardd">
+      <div class="card">
+        <div class="card-body">
+          <p class="p4">“For the wine or cocktail lover who’s tried it all and wants something new and refreshing.”</p>
+        </div>
+        <img src="img/NY times.svg" class="card-img-top">
+      </div>
+    </div>
+    <div class="spons__cardd">
+      <div class="card">
+        <div class="card-body">
+          <p class="p4">"What makes Haus so special is its incredible flavors."</p>
+        </div>
+        <img src="img/bon appetit.svg" class="card-img-top">
+      </div>
+    </div>
+  </div>
+  <hr class="hrr">
+
+
+  <div class="catalog">
+    <div class="catalog__txt">
+      <p class="p5">Made with natural ingredients, nothing fake</p>
+      <p class="p6">Shop All Flavors</p>
+    </div>
+    <div class="catalog__slider">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- БЛОК С КАРТОЧКАМИ-->
+            <div class="SLIDER">
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Grapefruit Jalapeño</p>
+                    <p class="p8">Light and refreshing, this aperitif is a bright blend of citrus
+                      with a subtle kick of fresh jalapeño.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">The Sampler Kit</p>
+                    <p class="p8">Try a variety of Haus flavors.
+                      Each bottle serves 2-3 drinks.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Citrus Flower</p>
+                    <p class="p8">A fresh Californian take on the apéritif.
+                      Made with crisp lemon and subtle elderflower.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- БЛОК С КАРТОЧКАМИ-->
+            <div class="SLIDER">
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Grapefruit Jalapeño</p>
+                    <p class="p8">Light and refreshing, this aperitif is a bright blend of citrus
+                      with a subtle kick of fresh jalapeño.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Grapefruit Jalapeño</p>
+                    <p class="p8">Light and refreshing, this aperitif is a bright blend of citrus
+                      with a subtle kick of fresh jalapeño.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Grapefruit Jalapeño</p>
+                    <p class="p8">Light and refreshing, this aperitif is a bright blend of citrus
+                      with a subtle kick of fresh jalapeño.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- БЛОК С КАРТОЧКАМИ-->
+            <div class="SLIDER">
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Citrus Flower</p>
+                    <p class="p8">A fresh Californian take on the apéritif.
+                      Made with crisp lemon and subtle elderflower.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Citrus Flower</p>
+                    <p class="p8">A fresh Californian take on the apéritif.
+                      Made with crisp lemon and subtle elderflower.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="SLIDER__CARD">
+                <div class="card">
+                  <img src="img/4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="p7">Citrus Flower</p>
+                    <p class="p8">A fresh Californian take on the apéritif.
+                      Made with crisp lemon and subtle elderflower.</p>
+                    <a href="#" class="btn au">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr class="hrr">
+
+  <div class="aper">
+    <div class="container">
+      <div class="row">
+        <div class="col"><!--фул сайз колонка-->
+          <img src="img/5.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <div class="row p-4">
+        <div class="col"> <!-- col-md-10 на планшетах и разрешениях выше колонка занимает 10/12-->
+          <p class="p9"> An intro to apéritifs </p>
+        </div>
+        <div class="col">
+          <p class="p4">Apéritifs are a category of spirits with complex flavors derived from fruits, herbs, and botanicals. Their
+            lighter
+            alcohol content (less than whiskey, more than wine) makes them perfect to sip all evening.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="hrr">
+
+
+  <div class="pypy">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pypypy__txt">
+                  <p class="p01">Easy to drink</p>
+                  <p class="p4">The perfect anytime drink, sip Haus on its own or with
+                    simple mixers you probably already have like soda or tonic.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="pypypy__txt">
+                  <p class="p01">Natural ingredients. <br>Nothing fake.</p>
+                  <p class="p4">Artificial ingredients and refined sugars are a big culprit
+                    in hangovers. Feel good about what’s in your glass that
+                    night — and the next day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="pypypy__txt">
+                  <p class="p01">Delivered to your door</p>
+                  <p class="p4">We blend, bottle, and ship our products straight from Sonoma,
+                    CA to your doorstep.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-7">
+          <img src="img/6.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="pypypy">
+    <div class="pypypy__txtt">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="pypypy__txt">
+              <p class="p01">Easy to drink</p>
+              <p class="p4">The perfect anytime drink, sip Haus on its own or with
+                simple mixers you probably already have like soda or tonic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="pypypy__txt">
+              <p class="p02">Natural ingredients. Nothing fake.</p>
+              <p class="p4">Artificial ingredients and refined sugars are a big culprit
+                in hangovers. Feel good about what’s in your glass that
+                night — and the next day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="pypypy__txt">
+              <p class="p01">Delivered to your door</p>
+              <p class="p4">We blend, bottle, and ship our products straight from Sonoma,
+                CA to your doorstep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pypypy__imgg">
+      <img src="img/6.png" class="img-fluid" alt="...">
+    </div>
+  </div>-->
+
+  <div class="otz">
+    <div class="otz__cont">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-4">
+            <div class="otz__txt">
+              <p class="p10">“Haus has found the solution I didn’t really know I was looking for!”</p>
+              <p class="p11">— SUSAN</p>
+              <p class="p12">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="otz__txt">
+              <p class="p10">“I love the flavor of this apéritif — it’s light and lively, and it’s refreshing with
+                seltzer or tonic.”</p>
+              <p class="p11">— FIONA</p>
+              <p class="p12">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="otz__txt">
+              <p class="p10">“It’s delicious, and unique. I love everything from the packaging, to the flavors.”</p>
+              <p class="p11">— ESTEBAN</p>
+              <p class="p12">Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="podpiski">
+    <!--<div class="podpiski__cont">-->
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="podpiski__spotify">
+              <p class="p13">Set the mood</p>
+              <p class="p14">Curated playlists from Woody + Helena, plus some of our friends and favorite brands.</p>
+              <button class="btn sp">Spotify</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">&nbsp;  </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="podpiski__smi">
+              <p class="p14">Follow us, share us, drink Ha(us)</p>
+              <div class="podpiski__cc">
+                <p class="p03">INSTAGRAM</p>
+                <p class="p03">TWITTER</p>
+                <p class="p03">FACEBOOK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--</div>-->
+
+  </div>
+
+  <div class="footer">
+    <div class="footer__cont">
+      <div class="container">
+        <div class="row">
+          <!--<div class="col-6">занимает 6 колонок из 12
+            <div class="col col-md-10">  на планшетах и разрешениях выше колонка занимает 10/12-->
+          <div class="col col-md-5"> <!--занимает 5 колонок-->
+            <div class="footer__niz">
+              <p class="p16">Stay posted</p>
+              <p class="p04">Let's be friends. Subscribe to our newsletter 
+                to receive updates on new launches, recipes, playlists, 
+                and more.</p>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__niz">
+              <p class="p11">EXPLORE  </p>
+              <p class="p15">HOME</p>
+              <p class="p15">SHOP</p>
+              <p class="p15">MEMBERSHIP</p>
+              <p class="p15">FAQ</p>
+              <p class="p15">CORPORATE GIFTING</p>
+              <p class="p15">GIFT CARD</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__niz">
+              <p class="p11">FOLLOW</p>
+              <p class="p15">INSTAGRAM</p>
+              <p class="p15">SPOTIFY</p>
+              <p class="p15">TWITTER</p>
+              <p class="p15">FACEBOOK</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__niz">
+              <p class="p11">DROP US A LINE</p>
+              <p class="p15">HELLO@DRINK.HAUS</p>
+              <p class="p15">PRESS@DRINK.HAUS</p>
+              <p class="p15">PARTNERSHIPS@DRINK.HAUS</p>
+              <p class="p15">JOBS@DRINK.HAUS</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="footer__pri">
+              <p class="p04">© Haus 2021</p>
+              <p class="p04">Contact Us</p>
+              <p class="p04">Return Policy</p>
+              <p class="p04">Privacy Policy</p>
+              <p class="p04">Terms & Conditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--подключаем джаву бутстрап ссылкой (также можно файлом)-->
+</body>
+
+</html>
