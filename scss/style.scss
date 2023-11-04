@@ -36,22 +36,41 @@
 .pmod {
     @include font_l(30px, 44px, #fff);
 }
+.pBURG {
+    @include font_r6(16px, 26px);
+    color: #000;
+}
 .p1 {
     @include font_r6(12px, 18px);
 }
 .p2 {
     @include font_l(73px, 96px, #fff);
     margin-bottom: 7%;
+    @media (max-width: 1200px) {
+        @include font_l(60px, 80px, #fff);
+    }
+    @media (max-width: 390px) {
+        @include font_l(50px, 60px, #fff);
+    }
 }
 .p3 {
     @include font_r4(18px, 32px, #fff);
 }
 .p4 {
     @include font_r4(18px, 32px, #000);
+    @media (max-width: 760px) {
+        @include font_r4(15px, 25px, #000);
+    }
 }
 .p5 {
     @include font_l(64px, 80px, #000);
     margin-bottom: 7%;
+    @media (max-width: 1200px) {
+        @include font_l(50px, 60px, #000);
+    }
+    @media (max-width: 400px) {
+        @include font_l(40px, 50px, #000);
+    }
 }
 .p6 {
     @include font_r4(12px, 18px, #000);
@@ -61,6 +80,9 @@
 .p7 {
     @include font_l(30px, 44px, #000);
     margin-bottom: 3%;
+    @media (max-width: 900px) {
+        @include font_l(24px, 35px, #000)
+    }
 }
 .p8 {
     @include font_r4(16px, 28px, #000);
@@ -68,6 +90,12 @@
 }
 .p9 {
     @include font_l(53px, 80px, #000);
+    @media (max-width: 760px) {
+        @include font_l(45px, 60px, #000);
+    }
+    //@media (max-width: 500px) {
+        //@include font_l(35px, 50px, #000);
+    //}
 }
 .p01 {
     @include font_l(30px, 44px, #000);
@@ -86,6 +114,9 @@
 }
 .p13 {
     @include font_l(55px, 80px, #fff);
+    @media (max-width: 450px) {
+        @include font_l(40px, 50px, #fff);
+    }
 }
 .p14 {
     @include font_r4(16px, 28px, #fff);
@@ -95,16 +126,17 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.p15 {@include font_r4(12px, 18px, rgba(255, 255, 255, 0.60));
+.p15 {
+    @include font_r4(12px, 18px, rgba(255, 255, 255, 0.6));
     letter-spacing: 1px;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 .p16 {
     @include font_l(42px, 72px, #fff);
-    }
+}
 .p04 {
     @include font_r4(18px, 27px, #fff);
 }
-
 
 .hrr {
     margin: 0 auto;
@@ -117,8 +149,6 @@
 //VERH
 .verh {
     background-color: #996b60;
-    display: flex;
-    flex-direction: row;
     margin-bottom: 4%;
 
     &__levo {
@@ -126,44 +156,68 @@
         width: 45%;
         padding: 38px 60px;
     }
-    &__nav1 {
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
     &__pravo {
         width: 55%;
         padding: 2% 6%;
+        @media (max-width: 768px){
+            width: 100%;
+        }
     }
-    &__nav2 {
-        width: 60%;
-        display: flex;
-        flex-direction: row;
+    &__navii {
         justify-content: space-between;
-        float: right;       
+        @media (max-width: 992px){
+            margin-top: 4%;;
+        }
     }
     &__txt {
-        margin-top: 37%; 
+        margin-top: 37%;
         width: 75%;
         margin-bottom: 11%;
+        @media (max-width: 965px){
+            width: 90%;
+            margin-top: 20%;
+        }
     }
 }
-.btn{@include font_r4(12px, 14px, #fff);
+.navv {
+    float: right;
+    align-items: center;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 81%;
+    left: -102px;
+}
+.dropdown-menu.show {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: rgba(255, 255, 255, 0);
+}
+.btnn{background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    float: right;}
+.btn {
+    @include font_r4(12px, 14px, #fff);
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 19px 52px;
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.2);
     margin-bottom: 12%;
-    border-radius: 0%;}
-.btn:active, .btn:hover{@include font_r4(12px, 14px, #fff);
+    border-radius: 0%;
+}
+.btn:active,
+.btn:hover {
+    @include font_r4(12px, 14px, #fff);
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 0%;}
+    border-radius: 0%;
+}
 
 //MODAL
-.modcentr{text-align: left;
+.modcentr {
+    text-align: left;
     //margin: 0 auto;
 
     display: flex;
@@ -172,23 +226,33 @@
     margin-top: 6%;
     margin-bottom: 1%;
 }
-.modal-content {background-color: #000;
+.modal-content {
+    background-color: #000;
 }
-.modal-header{border-bottom: #000;
-padding-bottom: 0%;}
+.modal-header {
+    border-bottom: #000;
+    padding-bottom: 0%;
+}
 .btn-close {
-    background-image: url(../img/kr.svg);}
-
+    background-image: url(../img/kr.svg);
+}
+.b-cl {
+    background-image: url(../img/kr1.svg);
+}
 
 
 //SPONS
 .card {
     padding: 4% 10%;
+    height: 100%;
+}
+.card-body{
+    @media (max-width: 768px){
+        padding: 0%;
+    }
 }
 .spons {
     width: 90%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -205,14 +269,16 @@ padding-bottom: 0%;}
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
+    @media (max-width: 750px){margin-bottom: 9%;}
     &__txt {
         width: 40%;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 3%;
+    @media (max-width: 1200px){width: 70%;}
+    @media (max-width: 520px){width: 90%;}
     }
 }
-
 
 //SLIDER
 .SLIDER {
@@ -224,28 +290,41 @@ padding-bottom: 0%;}
     justify-content: space-between;
     &__CARD {
         width: 30%;
+        @media (max-width: 768px) {
+            width: 47%;
+        }
     }
 }
 //кнопочки в слайдере
-.au{border: 1px solid #000;
+.au {
+    border: 1px solid #000;
     background: #000;
     margin-bottom: 0%;
-    margin-top: 3%;}
-.btn:active, .btn:hover{
+    margin-top: 3%;
+    padding: 15px 30px;
+    @media (max-width: 420px){
+        padding: 10px 20px; 
+        @include font_r4 (10px, 12px, #fff)      
+    }
+}
+.btn:active,
+.btn:hover {
     border: 1px solid #000;
-    background: #000;}
+    background: #000;
+}
 
 .carousel-indicators {
     bottom: -50px;
 }
 .carousel-control-next-icon {
-background-image: url(../img/str2.svg);
+    background-image: url(../img/str2.svg);
 }
 .carousel-control-prev-icon {
     background-image: url(../img/str1.svg);
-    }
+}
 .carousel-indicators [data-bs-target] {
-    background-color: #000;}
+    background-color: #000;
+}
 .carousel-control-next,
 .carousel-control-prev {
     width: 10%;
@@ -257,29 +336,35 @@ background-image: url(../img/str2.svg);
     margin-bottom: 5%;
 }
 
-//PYPYPY - выровнять по центру весь блок
-.pypypy {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+//PYPY
+.pypy {
     width: 90%;
     margin: 0 auto;
     align-items: center;
-    margin-bottom: 4%;
-    @media (max-width: 1024px) {
-        flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3%;
+    &__cont {
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
     }
-    &__txtt {
-        width: 30%;
+    &__txt {
+        width: 40%;
+        @media (max-width: 1200px) {
+            width: 85%;
+            text-align: center;
+            margin: 0 auto;
+        }
     }
     &__imgg {
-        width: 70%;
-        //margin-left: 7%;
+        width: 50%;
+        @media (max-width: 1200px) {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
-}
-.pypy{
-    //width: 95%;
-    margin: 0 auto;
 }
 
 //OTZIVII
@@ -316,25 +401,53 @@ background-image: url(../img/str2.svg);
         width: 60%;
         margin: 0 auto;
         margin-top: 5%;
+        @media (max-width: 390px){
+            width: 80%;
+        }
     }
 }
-.sp{@include font_r4(14px, 14px, #000);
+.sp {
+    @include font_r4(14px, 14px, #000);
     padding: 19px 58px;
     border: 1px solid #fff;
     background: #fff;
     margin-bottom: 1%;
-    }
+}
 //.sp:active, .sp:hover{@include font_r4(12px, 14px, #fff);
-    //border: 1px solid #fff;
-    //background: rgba(255, 255, 255, 0.2);
-    //border-radius: 0%;}
+//border: 1px solid #fff;
+//background: rgba(255, 255, 255, 0.2);
+//border-radius: 0%;}
 
-//SPONS
-.footer{
+//FOOTER
+.footer {
     background-color: #000;
     padding: 30px 60px;
-    &__pri{display: flex;
-        flex-direction: row;}
-    &__cont{justify-content: space-between;}
-        
+    @media (max-width: 390px){
+        padding: 20px 40px;
+    }
+    &__pri {
+        justify-content: space-between;
+    }
+    &__cont {
+        justify-content: space-between;
+    }
+}
+.ayy{
+    @media (max-width: 720px){
+        display: none;
+    }}
+.form-floating > label {
+    @include font_r4(12px, 14px, #ffffffd5);
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+}
+
+.pform{@include font_r4(12px, 14px, #ffffffd5);
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    margin-bottom: 2%;}
+.btnan{
+    margin-bottom: 0px;
+    margin-top: 4%;
+    padding: 3% 5%;
 }
